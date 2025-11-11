@@ -8,7 +8,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="index.css" />
 
-  <!-- Font Awesome (latest version) -->
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -21,23 +21,23 @@
 <body>
   <!-- Header -->
   <header class="nav-bar">
-    <div class="logo">Daniel G's Portfolio</div>
+    <div class="logo">Daniel G<span>'s Portfolio</span></div>
 
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Main Navigation">
       <a href="#home">Home</a>
-      <a href="#about">Skills</a>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <div class="social-links">
-      <a href="https://wa.me/08077185393" target="_blank" class="icon whatsapp">
+      <a href="https://wa.me/08077185393" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
       </a>
-      <a href="mailto:dapereira519axa@gmail.com" class="icon gmail">
+      <a href="mailto:dapereira519axa@gmail.com" class="icon gmail" aria-label="Email">
         <i class="fa-solid fa-envelope"></i>
       </a>
-      <a href="https://github.com/d41n3lx" target="_blank" class="icon github">
+      <a href="https://github.com/d41n3lx" target="_blank" class="icon github" aria-label="GitHub">
         <i class="fa-brands fa-github"></i>
       </a>
     </div>
@@ -47,14 +47,11 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <div class="hero-image">
-        <img src="me.jpg" alt="Daniel Portrait" />
+        <img src="me.jpg" alt="Portrait of Daniel G" />
       </div>
       <div class="hero-text">
         <h1>Hi, I'm <span>Daniel G.</span></h1>
-        <p>
-          I'm a Web Developer and UI/UX Designer, creating clean, functional, and
-          user-friendly digital experiences.
-        </p>
+        <p>I'm a Web Developer and UI/UX Designer who crafts clean, functional, and user-friendly digital experiences.</p>
       </div>
     </div>
   </section>
@@ -63,8 +60,8 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      Hello! I specialize in modern web development and intuitive UI/UX design. My
-      goal is to turn ideas into engaging digital experiences that users love.
+      I specialize in modern web development and intuitive UI/UX design.
+      My goal is to turn ideas into engaging, meaningful experiences users love.
     </p>
   </section>
 
@@ -85,18 +82,17 @@
     <div class="portfolio-grid">
       <div class="project-card">
         <h3>UI/UX Designs</h3>
-        <p>Figma designs for Food Delivery & Banking Apps</p>
+        <p>Figma designs for Food Delivery and Banking Apps.</p>
         <a href="./projects/ui-ux.html" class="btn">View Designs</a>
       </div>
       <div class="project-card">
         <h3>My Website</h3>
-        <p>The website I built using HTML, CSS, and JS</p>
+        <p>A responsive website built with HTML, CSS, and JavaScript.</p>
         <a
           href="https://d41n3lx.github.io/dg-estate-services"
           target="_blank"
           class="btn"
-          >Visit Website</a
-        >
+          >Visit Website</a>
       </div>
     </div>
   </section>
@@ -104,11 +100,7 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <form
-      action="mailto:dapereira519axa@gmail.com"
-      method="POST"
-      enctype="text/plain"
-    >
+    <form action="mailto:dapereira519axa@gmail.com" method="POST" enctype="text/plain">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
@@ -124,25 +116,25 @@
       <div class="quick-links">
         <h4>Quick Links</h4>
         <a href="#home">Home</a>
-        <a href="#about">Skills</a>
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
 
       <div class="contact-info">
         <h4>Contact Info</h4>
-        <p>Email: dapereira519axa@gmail.com</p>
-        <p>Phone: +234 807 7185 393</p>
+        <p>Email: <a href="mailto:dapereira519axa@gmail.com">dapereira519axa@gmail.com</a></p>
+        <p>Phone: <a href="tel:+2348077185393">+234 807 7185 393</a></p>
         <p>Address: Bethel Oborevwori Str, Osubi</p>
       </div>
 
       <div class="footer-socials">
-        <a href="https://wa.me/08077185393" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://github.com/d41n3lx" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/08077185393" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/d41n3lx" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
 
-    <p class="copyright">Daniel G's Portfolio. All rights reserved.</p>
+    <p class="copyright">© 2025 Daniel G. All rights reserved.</p>
   </footer>
 </body>
 </html>

@@ -63,6 +63,12 @@ justify-content:space-between;
 align-items:center;
 padding:50px 10%;
 gap:50px;
+linear-gradient(
+135deg,
+#f8f7ff 0%,
+#ede9fe 50%,
+#f5f3ff 100%
+);
 }
 
 .hero h1{
@@ -207,7 +213,7 @@ color:white;
 }
 
 .contact form{
-max-width:600px;
+max-width:400px;
 margin:auto;
 display:flex;
 flex-direction:column;
@@ -235,6 +241,7 @@ background:#111;
 color:white;
 padding:30px;
 text-align:center;
+align-items: center;
 }
 
 @media(max-width:768px){

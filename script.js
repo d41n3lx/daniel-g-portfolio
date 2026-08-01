@@ -1,22 +1,38 @@
-<script>
-  const form = document.querySelector("form");
-  const successMsg = document.createElement("div");
-  successMsg.className = "success-message";
-  successMsg.textContent = "✅ Message Sent Successfully!";
-  form.parentNode.insertBefore(successMsg, form.nextSibling);
+const text = [
+"Software Engineer",
+"Full Stack Developer",
+"Problem Solver",
+"Future Tech Innovator"
+];
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault(); // prevent instant page reload
-    fetch(form.action, {
-      method: "POST",
-      body: new FormData(form)
-    })
-      .then(() => {
-        form.reset();
-        successMsg.style.display = "block";
-        setTimeout(() => (successMsg.style.display = "none"), 4000);
-      })
-      .catch(() => alert("❌ Something went wrong, please try again."));
-  });
-</script>
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
+(function type(){
+
+if(count === text.length){
+count = 0;
+}
+
+currentText = text[count];
+
+letter = currentText.slice(0, ++index);
+
+document.getElementById("typing").textContent = letter;
+
+if(letter.length === currentText.length){
+
+count++;
+index = 0;
+
+setTimeout(type, 1500);
+
+}else{
+
+setTimeout(type, 100);
+
+}
+
+})();

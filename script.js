@@ -1,8 +1,6 @@
 const text = [
 "Software Engineer",
-"Full Stack Developer",
-"Problem Solver",
-"Future Tech Innovator"
+"Full Stack Developer"
 ];
 
 let count = 0;

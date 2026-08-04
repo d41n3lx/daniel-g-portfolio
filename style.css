@@ -359,10 +359,17 @@ margin-right:5px;
 }
 
 .view{
-display:block;
+display:inline-block;
 margin-top:20px;
 color:#6c63ff;
 font-weight:600;
+text-decoration:none;
+transition:.3s;
+}
+
+.view:hover{
+color:#8b5cf6;
+transform:translateX(5px);
 }
 
 /* STATS */

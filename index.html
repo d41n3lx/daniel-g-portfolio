@@ -163,13 +163,27 @@
   </section>
 
   <section id="contact">
-    <h2>Get In Touch</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <h2>Contact Me</h2>
+
+  <form id="portfolioContactForm" onsubmit="handleContactSubmit(event)">
+    <input type="text" id="senderName" placeholder="Your Name" required>
+    <input type="email" id="senderEmail" placeholder="Your Email" required>
+    <textarea id="senderMessage" placeholder="Your Message" required></textarea>
+    
+    <button type="submit" id="submitBtn">
+      <span>Send Message</span>
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </form>
+
+  <div class="response-modal" id="responseModal">
+    <div class="response-content">
+      <div class="check-icon"><i class="fas fa-check-circle"></i></div>
+      <h3>Message Received!</h3>
+      <p>Your message has been sent. Thank you for reaching out to me!</p>
+      <button onclick="closeResponseModal()">Close</button>
+    </div>
+  </div>
   </section>
 
   <footer>

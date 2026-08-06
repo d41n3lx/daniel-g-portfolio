@@ -8,6 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("6sn-5pnKjRUjktocH"); // Replace with your actual Public Key
+   })();
+</script>
 </head>
 <body>
 
@@ -166,14 +172,14 @@
   <h2>Contact Me</h2>
 
   <form id="portfolioContactForm" onsubmit="handleContactSubmit(event)">
-    <input type="text" id="senderName" placeholder="Your Name" required>
-    <input type="email" id="senderEmail" placeholder="Your Email" required>
-    <textarea id="senderMessage" placeholder="Your Message" required></textarea>
-    
-    <button type="submit" id="submitBtn">
-      <span>Send Message</span>
-      <i class="fas fa-paper-plane"></i>
-    </button>
+  <input type="text" id="senderName" name="from_name" placeholder="Your Name" required>
+  <input type="email" id="senderEmail" name="reply_to" placeholder="Your Email" required>
+  <textarea id="senderMessage" name="message" placeholder="Your Message" required></textarea>
+  
+  <button type="submit" id="submitBtn">
+    <span>Send Message</span>
+    <i class="fas fa-paper-plane"></i>
+  </button>
   </form>
 
   <div class="response-modal" id="responseModal">

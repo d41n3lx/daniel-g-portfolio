@@ -1,5 +1,4 @@
 const text = [
-"Software Engineer",
 "Full Stack Developer"
 ];
 

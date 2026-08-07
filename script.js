@@ -1,4 +1,5 @@
 const text = [
+" ",
 "Full Stack Developer"
 ];
 

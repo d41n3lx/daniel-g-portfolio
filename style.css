@@ -132,16 +132,11 @@ h2 {
   width: 280px;
   height: 280px;
   object-fit: cover;
+  object-position: center top; /* Keeps focus on face/head */
   border-radius: 50%;
   border: 3px solid rgba(167, 139, 250, 0.4);
   box-shadow: 0 0 35px rgba(139, 92, 246, 0.3);
   transition: 0.4s ease;
-}
-
-.hero-image img:hover {
-  transform: scale(1.03);
-  border-color: #38bdf8;
-  box-shadow: 0 0 45px rgba(56, 189, 248, 0.4);
 }
 
 .buttons {
